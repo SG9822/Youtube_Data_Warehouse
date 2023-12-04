@@ -57,7 +57,7 @@ def query(query_dict, s):
 
 
 
-st.image("Statistics-Vector-PNG-Pic.png", width=150)
+st.image("The image you like", width=150)
 st.title("Query Details")
 st.header("Want to know some Stats and Ranks?")
 

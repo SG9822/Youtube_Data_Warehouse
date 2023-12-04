@@ -77,14 +77,12 @@ For more detailed instructions and updates, refer to the [official Google Cloud 
 
 3. Set up configuration:
 
-    Create a `.env` file in the project root and add the following:
+    Create a ``connection`` between python and MonoDB & MySQL:
 
     ```env
-    MONGODB_URI=your_mongodb_uri, eg.pymongo.MongoClient('your host') 
-    MYSQL_URI=your_mysql_uri, eg.mysql://username:password@host:port/database
+    MONGODB=your_mongodb_uri, eg.pymongo.MongoClient('your host') 
+    MYSQL=your_mysql_uri, eg.mysql://username:password@host:port/database
     ```
-
-    Replace `your_mongodb_uri` and `your_mysql_uri` with your MongoDB and MySQL connection strings.
 
 4. Run the Streamlit app:
 

@@ -13,7 +13,7 @@ st.set_page_config(
 
 st.sidebar.success("Select a page above")
 
-st.image("youtube-logo-download.png", width=100)
+st.image("The image you like", width=100)
 
 st.title("Welcome to Page to Know YouTube Beyond Videos")
 st.markdown("### Want to know about Channels")

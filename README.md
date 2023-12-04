@@ -80,8 +80,8 @@ For more detailed instructions and updates, refer to the [official Google Cloud 
     Create a ``connection`` between python and MonoDB & MySQL:
 
     ```env
-    MONGODB=your_mongodb_uri, eg.pymongo.MongoClient('your host') 
-    MYSQL=your_mysql_uri, eg.mysql://username:password@host:port/database
+    MONGODB=your_mongodb_url, eg.pymongo.MongoClient('your host') 
+    MYSQL=your_mysql_url, eg.mysql://username:password@host:port/database
     ```
 
 4. Run the Streamlit app:

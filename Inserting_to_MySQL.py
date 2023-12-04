@@ -77,4 +77,4 @@ def data_collection(collection, channel):
             videos.append(v[i][j])
 
     df_mysql(channels, comments, videos)
-    return f"{channel} Migrated to MySQL and please remove channel by clicking x mark on drop down"
+    return f"{channel} Migrated to MySQL"

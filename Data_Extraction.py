@@ -1,11 +1,11 @@
 import googleapiclient.discovery
 from googleapiclient.errors import HttpError
-# AIzaSyD8D-buiLTS1zwuLhRzyFN1X_xTqB7XAX8 Spare API Key use if any quta exceeded error
-api_key = 'AIzaSyBGqGcrhtk05bTfHD9TuYqj_DHiHWyvpiw'
+
+api_key = 'Use Your Api'
 
 api_service_name = "youtube"
 api_version = "v3"
-client_secrets_file = "AIzaSyBGqGcrhtk05bTfHD9TuYqj_DHiHWyvpiw.json"
+client_secrets_file = "api_key.json"
 
 developerKey = api_key
 youtube = googleapiclient.discovery.build(

@@ -10,7 +10,7 @@ st.set_page_config(
 
 st.sidebar.success("Select a page above")
 
-st.image("How-to-Join-Two-Tables-in-SQL.png", width=100)
+st.image("TablesSQL.png", width=100)
 
 
 st.title("Want to see Tables stored in our Database that you are working with?")

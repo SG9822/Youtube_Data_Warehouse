@@ -47,19 +47,14 @@ def df_mysql(channels, comments, videos):
 
             mycursor.execute("SET SQL_SAFE_UPDATES = 0")
             mydb.commit()
-            print("safe off")
             mycursor.execute(f"delete from channel where Channel_Id = '{id_c}'")
             mydb.commit()
-            print("deleted channel")
             mycursor.execute(f"DELETE FROM comments WHERE channel_id = '{id_c}'")
             mydb.commit()
-            print("deleted video")
             mycursor.execute(f"DELETE FROM video WHERE channel_id = '{id_c}'")
             mydb.commit()
-            print("deleted comment")
             mycursor.execute("SET SQL_SAFE_UPDATES = 1")
             mydb.commit()
-            print("safe on")
 
 
         channel.to_sql('channel', con=engine, if_exists='append', index=False)
@@ -82,4 +77,4 @@ def data_collection(collection, channel):
             videos.append(v[i][j])
 
     df_mysql(channels, comments, videos)
-    return f"{channel} Migrated to MySQL"
+    return f"{channel} Migrated to MySQL and please remove channel by clicking x mark on drop down"

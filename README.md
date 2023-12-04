@@ -21,6 +21,36 @@ A Streamlit web application for extracting YouTube channel, video, and comment d
 - Perform basic queries and visualize data using Streamlit and Plotly.
 
 ## Getting Started
+## How to fetch the youtube api?
+To use the YouTube Data API in this project, you need to obtain an API key from the Google Cloud Console. Follow the steps below to create your API key:
+
+1. **Create a Project on Google Cloud Console:**
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Click on the project dropdown in the top right corner and select "New Project."
+   - Enter a name for your project and click "Create."
+
+2. **Enable the YouTube Data API:**
+   - In the Google Cloud Console, navigate to the "APIs & Services" > "Dashboard" page.
+   - Click on "+ ENABLE APIS AND SERVICES."
+   - Search for "YouTube Data API" and select it.
+   - Click on the "Enable" button.
+
+3. **Create API Key:**
+   - In the Google Cloud Console, navigate to the "APIs & Services" > "Credentials" page.
+   - Click on "+ CREATE CREDENTIALS" and select "API key."
+   - Copy the generated API key.
+
+4. **Restrict API Key (Optional but Recommended for Security):**
+   - On the "Credentials" page, click on your newly created API key.
+   - Under "Key restriction," you can set restrictions based on HTTP referrers, IP addresses, or applications.
+   - Configure restrictions based on your security requirements.
+
+5. **Use the API Key in Your Application:**
+   - Use the API key in your application by including it in the API requests to the YouTube Data API.
+
+Keep your API key secure and do not expose it publicly. If you are building a web application, it's recommended to set proper restrictions on the API key to control its usage.
+
+For more detailed instructions and updates, refer to the [official Google Cloud documentation](https://cloud.google.com/docs/authentication/api-keys).
 
 ### Prerequisites
 

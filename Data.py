@@ -68,6 +68,7 @@ files = files()
 
 st.divider()
 st.markdown("### Migration to MySQL")
+st.markdown("##### After Migration pls remove the channel by using 'x' mark in dropdown")
 channel = st.selectbox("Select a channel to Migrate to SQL", files, index=None)
 mig = st.button("Migrate")
 
